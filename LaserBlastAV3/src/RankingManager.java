@@ -35,6 +35,8 @@ class RankingManager {
             while ((linha = r.readLine()) != null) {
                 String[] dados = linha.split(";");
                 ranking.add(new PlayerScore(dados[0], Integer.parseInt(dados[1])));
+                //integer.parseint p converter a String que seria os pontos em int :)
+                // se quiser mudar pode ficar a vontade 
             }
 
         } catch (IOException e) {
@@ -42,3 +44,4 @@ class RankingManager {
         }
     }
 }
+
